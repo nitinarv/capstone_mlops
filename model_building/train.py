@@ -111,7 +111,6 @@ with mlflow.start_run(run_name="bagging_fast_run") as run:
         "test_roc_auc": roc_auc_score(ytest, y_pred_test_proba)
     })
 
-    log_model_results("bagging_fast_run_production", train_report=train_report, test_report=test_report)
 
     # Save the model locally
     model_path = "best_model.joblib"

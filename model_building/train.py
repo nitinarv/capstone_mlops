@@ -25,7 +25,7 @@ USERNAME = os.getenv("YOUR_USERNAME")
 Xtrain_path = f"hf://datasets/{USERNAME}/car-engine-predictive-maintenence/Xtrain.csv"
 Xtest_path = f"hf://datasets/{USERNAME}/car-engine-predictive-maintenence/Xtest.csv"
 ytrain_path = f"hf://datasets/{USERNAME}/car-engine-predictive-maintenence/ytrain.csv"
-ytest_path = f"hf://datasets/{USERNAME}/car-engine-predictive-maintenencen/ytest.csv"
+ytest_path = f"hf://datasets/{USERNAME}/car-engine-predictive-maintenence/ytest.csv"
 
 Xtrain = pd.read_csv(Xtrain_path)
 Xtest = pd.read_csv(Xtest_path)

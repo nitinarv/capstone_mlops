@@ -112,7 +112,7 @@ with mlflow.start_run(run_name="bagging_fast_run") as run:
     log_model_results("bagging_fast_run_production", train_report=train_report, test_report=test_report)
 
     # Save the model locally
-    model_path = "content/mlops/models/best_model.joblib"
+    model_path = "best_model.joblib"
     joblib.dump(best_model, model_path)
 
     # Log the model artifact
@@ -134,7 +134,7 @@ with mlflow.start_run(run_name="bagging_fast_run") as run:
 
     # create_repo("churn-model", repo_type="model", private=False)
     api.upload_file(
-        path_or_fileobj="content/mlops/models/best_model.joblib",
+        path_or_fileobj="best_model.joblib",
         path_in_repo="best_model.joblib",
         repo_id=repo_id,
         repo_type=repo_type,

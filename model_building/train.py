@@ -10,6 +10,8 @@ from sklearn.pipeline import make_pipeline
 from sklearn.metrics import classification_report, roc_auc_score
 from sklearn.ensemble import BaggingClassifier
 from sklearn.tree import DecisionTreeClassifier
+from huggingface_hub import HfApi, create_repo
+from huggingface_hub.utils import RepositoryNotFoundError
 
 
 mlflow.set_tracking_uri("http://localhost:5000")

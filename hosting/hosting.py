@@ -1,7 +1,7 @@
 from huggingface_hub import HfApi
 import os
 
-repo_id = f"{os.getenv('YOUR_USERNAME')}/car-engine-predictive-maintenence"
+repo_id = f"{os.getenv('YOUR_USERNAME')}/car-engine-predictive-maintenence-model"
 repo_type = "space"
 
 api = HfApi(token=os.getenv("HF_TOKEN"))

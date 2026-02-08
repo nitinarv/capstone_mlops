@@ -12,7 +12,7 @@ if not USERNAME:
     raise ValueError("YOUR_USERNAME environment variable not set")
 if not HF_TOKEN:
     raise ValueError("HF_TOKEN environment variable not set")
-        
+
 
 # Download the model from the Model Hub
 model_path = hf_hub_download(repo_id=f"{USERNAME}/car-engine-predictive-maintenence-model", filename="best_model.joblib")
